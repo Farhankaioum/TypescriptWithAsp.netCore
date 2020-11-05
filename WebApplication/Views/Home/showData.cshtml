@@ -1,0 +1,36 @@
+﻿@model IList<IndexModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    @if (Model.Count <= 0)
+    {
+        <p>No data found</p>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var data in Model)
+            {
+            <div class="col-md-4 col-sm-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-header">@data.Name</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="lead">@data.Email</p>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    }
+
+
+</div>
+
+@section Scripts{
+    <script src="~/ts/validation.js"></script>
+}
