@@ -27,8 +27,13 @@
             <button type="button" class="btn btn-info" onclick="printMe()">Print me</button>
         </div>
     </form>
+    <hr />
+    <input name="searchUserId" id="searchUserId" type="number" class="form-control" />
+    <button class="btn btn-danger mt-2" type="button" onclick="getUserById()">Search</button>
 </div>
 
 @section Scripts{ 
     <script src="~/ts/validation.js"> </script>
+    <script src="~/ts/first.js"> </script>
+    <script src="~/ts/dev.js"> </script>
 }

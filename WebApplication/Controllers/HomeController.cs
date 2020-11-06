@@ -46,6 +46,19 @@ namespace WebApplication.Controllers
             return View();
         }
 
+        [HttpGet("getUsers")]
+        public IActionResult GetUsers()
+        {
+            return Json(_listOfdata);
+        }
+
+        [HttpGet("getUser/{id}")]
+        public IActionResult GetUser(int id)
+        {
+            var user = _listOfdata.FirstOrDefault(u => u.Id == id);
+            return Json(user);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
