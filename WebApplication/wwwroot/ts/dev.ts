@@ -3,7 +3,7 @@
     width?: number;
 }
 
-function createSquare(config: SquareConfig): SquareConfig{
+function createSquare1(config: SquareConfig): SquareConfig{
     let newSquare = { color: "white", area: 100 };
     if (config.color) {
         newSquare.color = config.color;

@@ -10,3 +10,10 @@ function createSquare(config: SquareConfig): { color: string; area: number } {
 
 let squareOptions = { colour: "red" };
 let mySquare = createSquare(squareOptions);
+
+
+interface StringArray {
+    [index: number]: string;
+}
+
+

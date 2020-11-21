@@ -1,4 +1,4 @@
-function createSquare(config) {
+function createSquare1(config) {
     var newSquare = { color: "white", area: 100 };
     if (config.color) {
         newSquare.color = config.color;
